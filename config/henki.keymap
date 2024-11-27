@@ -498,9 +498,9 @@
             timeout-ms = <35>;
         };
 
-        combo_b_t1_raycast {
+        combo_b_t2_raycast {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <29 38>;
+            key-positions = <29 37>;
         };
 
         combo_v_t3_switch_lang {
@@ -571,14 +571,9 @@
             key-positions = <38 39>;
         };
 
-        combo_v_t2_raycast_apps {
+        combo_v_t3_raycast_apps {
             bindings = <&kp LC(LG(N))>;
-            key-positions = <37 29>;
-        };
-
-        combo_v_t3_switch_wrong_lang {
-            bindings = <&kp LALT>;
-            key-positions = <28 37>;
+            key-positions = <29 38>;
         };
 
         combo_toggle_game_layer {
@@ -635,27 +630,27 @@
             timeout-ms = <75>;
         };
 
-        combo_t2_a_media_func_layer {
+        combo_t1_a_media_func_layer {
             bindings = <&lt 9 LC(LG(N))>;
-            key-positions = <37 13>;
+            key-positions = <13 38>;
         };
 
-        combo_t2_semi_media_func_layer {
+        combo_t1_semi_media_func_layer {
             bindings = <&lt 9 COLON>;
-            key-positions = <40 22>;
+            key-positions = <22 39>;
             timeout-ms = <75>;
         };
 
         combo_hyper {
             bindings = <&kp LC(LA(LS(LGUI)))>;
-            key-positions = <39 22>;
+            key-positions = <22 40>;
             timeout-ms = <75>;
             layers = <0 5>;
         };
 
         combo_meh {
             bindings = <&kp LA(LS(LCTRL))>;
-            key-positions = <13 38>;
+            key-positions = <13 37>;
             timeout-ms = <75>;
             layers = <0 5>;
         };
@@ -667,27 +662,14 @@
             timeout-ms = <75>;
         };
 
-        combo_p_t1_toggle_console {
-            bindings = <&kp LG(GRAVE)>;
-            key-positions = <39 10>;
-            layers = <0 7>;
-            timeout-ms = <75>;
-        };
-
-        combo_z_t3_soft_off {
-            bindings = <&soft_off>;
-            key-positions = <25 36>;
-            layers = <0>;
-        };
-
-        combo_c_t3_gpt_promt {
+        combo_xc_gpt_promt {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <36 27>;
+            key-positions = <27 26>;
         };
 
-        combo_g_t1_paste_app {
+        combo_g_t2_paste_app {
             bindings = <&mcr_paste_app>;
-            key-positions = <17 38>;
+            key-positions = <17 37>;
             layers = <0 8>;
         };
 
@@ -700,12 +682,6 @@
         combo_we_scroll_on {
             bindings = <&mcr_scroll_on>;
             key-positions = <3 2>;
-            timeout-ms = <40>;
-        };
-
-        combo_xc_switch_lang {
-            bindings = <&kp F24>;
-            key-positions = <26 27>;
             timeout-ms = <40>;
         };
 
