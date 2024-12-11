@@ -701,6 +701,18 @@
             key-positions = <2 14>;
             layers = <0 5 1 8>;
         };
+
+        combo_psemicolon {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <10 22>;
+            layers = <0 5 1 8>;
+        };
+
+        combo_semiquestion {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <22 34>;
+            layers = <0 5 1 8>;
+        };
     };
 
     behaviors {
@@ -938,7 +950,7 @@
 &trans  &trans  &kp LG(LC(J))  &none           &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &mcr_scroll_on  &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans  &trans         &trans          &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
-                               &kp LC(F3)      &mcr_f4_ctrl   &mcr_f5_ctrl    &trans  &trans   &trans
+                               &mcr_f4_ctrl    &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
             >;
         };
 
