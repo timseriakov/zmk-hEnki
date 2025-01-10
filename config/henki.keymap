@@ -694,7 +694,7 @@
             layers = <1>;
         };
 
-        combo_we_scroll_on {
+        combo_wer_scroll_on {
             bindings = <&mcr_scroll_on>;
             key-positions = <3 2 4>;
             timeout-ms = <40>;
@@ -738,21 +738,21 @@
 
         combo_hyper_e {
             bindings = <&kp LC(LA(LS(LG(E))))>;
-            key-positions = <38 3>;
+            key-positions = <3 37>;
             timeout-ms = <75>;
             layers = <0>;
         };
 
         combo_hyper_r {
             bindings = <&kp LC(LA(LS(LG(R))))>;
-            key-positions = <38 4>;
+            key-positions = <4 37>;
             timeout-ms = <75>;
             layers = <0>;
         };
 
         combo_hyper_t {
             bindings = <&kp LC(LA(LS(LG(T))))>;
-            key-positions = <38 4>;
+            key-positions = <37 5>;
             timeout-ms = <75>;
             layers = <0>;
         };
