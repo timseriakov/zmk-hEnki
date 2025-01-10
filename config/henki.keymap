@@ -729,29 +729,29 @@
             layers = <0 5 1 8>;
         };
 
-        combo_meh_w {
-            bindings = <&kp LC(LA(LS(W)))>;
+        combo_hyper_w {
+            bindings = <&kp LC(LA(LS(LG(W))))>;
             key-positions = <38 2>;
             timeout-ms = <75>;
             layers = <0>;
         };
 
-        combo_meh_e {
-            bindings = <&kp LC(LA(LS(E)))>;
+        combo_hyper_e {
+            bindings = <&kp LC(LA(LS(LG(E))))>;
             key-positions = <38 3>;
             timeout-ms = <75>;
             layers = <0>;
         };
 
-        combo_meh_r {
-            bindings = <&kp LC(LA(LS(R)))>;
+        combo_hyper_r {
+            bindings = <&kp LC(LA(LS(LG(R))))>;
             key-positions = <38 4>;
             timeout-ms = <75>;
             layers = <0>;
         };
 
-        combo_meh_t {
-            bindings = <&kp LC(LA(LS(T)))>;
+        combo_hyper_t {
+            bindings = <&kp LC(LA(LS(LG(T))))>;
             key-positions = <38 4>;
             timeout-ms = <75>;
             layers = <0>;
