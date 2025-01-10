@@ -4,11 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     flavor = "balanced";
@@ -433,6 +434,20 @@
 
             label = "MCR_F5_CTRL";
         };
+
+        mcr_tseryakovgmailcom: mcr_tseryakovgmailcom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp DOT &kp S &kp E &kp R &kp Y &kp A &kp K &kp O &kp V &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp TAB>;
+            label = "MCR_TSERYAKOVGMAILCOM";
+        };
+
+        mcr_timofeyseryakovgmailcom: mcr_timofeyseryakovgmailcom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp I &kp M &kp O &kp F &kp E &kp Y &kp DOT &kp S &kp E &kp R &kp Y &kp A &kp K &kp O &kp V &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp TAB>;
+            label = "MCR_TIMOFEYSERYAKOVGMAILCOM";
+        };
     };
 
     combos {
@@ -681,7 +696,7 @@
 
         combo_we_scroll_on {
             bindings = <&mcr_scroll_on>;
-            key-positions = <3 2>;
+            key-positions = <3 2 4>;
             timeout-ms = <40>;
         };
 
