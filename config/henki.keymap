@@ -738,21 +738,7 @@
 
         combo_hyper_e {
             bindings = <&kp LC(LA(LS(LG(E))))>;
-            key-positions = <3 37>;
-            timeout-ms = <75>;
-            layers = <0>;
-        };
-
-        combo_hyper_r {
-            bindings = <&kp LC(LA(LS(LG(R))))>;
-            key-positions = <4 37>;
-            timeout-ms = <75>;
-            layers = <0>;
-        };
-
-        combo_hyper_t {
-            bindings = <&kp LC(LA(LS(LG(T))))>;
-            key-positions = <37 5>;
+            key-positions = <3 38>;
             timeout-ms = <75>;
             layers = <0>;
         };
