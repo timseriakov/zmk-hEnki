@@ -11,8 +11,8 @@
 BASE_DIR="/Users/tim/Downloads/"
 ZIP_NAME="firmware.zip"
 ZIP_PATH="${BASE_DIR}${ZIP_NAME}"
-DELAY_SECONDS=2
-TARGET_FILES=("gbEnki_left-nice_nano_v2-zmk.uf2" "henki_left-nice_nano_v2-zmk.uf2")
+DELAY_SECONDS=3
+TARGET_FILES=("henki_left-nice_nano_v2-zmk.uf2")
 DESTINATION="/Volumes/NICENANO"
 
 sleep $DELAY_SECONDS
