@@ -735,12 +735,6 @@
             timeout-ms = <75>;
             layers = <0>;
         };
-
-        combo_hyper_f {
-            bindings = <&kp LC(LA(LS(LG(F))))>;
-            key-positions = <37 16>;
-            layers = <0>;
-        };
     };
 
     behaviors {
