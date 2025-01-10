@@ -735,6 +735,13 @@
             timeout-ms = <75>;
             layers = <0>;
         };
+
+        combo_hyper_t {
+            bindings = <&kp LC(LA(LS(LG(T))))>;
+            key-positions = <38 5>;
+            timeout-ms = <75>;
+            layers = <0>;
+        };
     };
 
     behaviors {
