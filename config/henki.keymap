@@ -605,27 +605,13 @@
 
         combo_t1_a_media_func_layer {
             bindings = <&lt 7 LC(LG(N))>;
-            key-positions = <13 38>;
+            key-positions = <13 37>;
         };
 
         combo_t1_semi_media_func_layer {
             bindings = <&lt 7 COLON>;
-            key-positions = <22 39>;
-            timeout-ms = <75>;
-        };
-
-        combo_hyper {
-            bindings = <&kp LC(LA(LS(LGUI)))>;
             key-positions = <22 40>;
             timeout-ms = <75>;
-            layers = <0 3>;
-        };
-
-        combo_meh {
-            bindings = <&kp LA(LS(LCTRL))>;
-            key-positions = <13 37>;
-            timeout-ms = <75>;
-            layers = <0 3>;
         };
 
         combo_q_t1_toggle_console {
