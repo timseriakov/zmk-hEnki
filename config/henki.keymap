@@ -136,14 +136,14 @@
         mcr_esc: mcr_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &to 0 &mcr_scroll_off>;
+            bindings = <&kp ESC &to 0>;
             label = "MCR_ESC";
         };
 
         mcr_paste_app: mcr_paste_app {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(V)) &to 8>;
+            bindings = <&kp LS(LG(V)) &to 6>;
             label = "MCR_PASTE_APP";
         };
 
@@ -329,47 +329,12 @@
             label = "MCR_FLASH_FIRMWARE";
         };
 
-        mcr_horizontal_scroll: mcr_horizontal_scroll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT &mkp MB5>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LSHFT &mkp MB5>;
-
-            label = "MCR_HORIZONTAL_SCROLL";
-        };
-
         mcr_mkp_mb1: mcr_mkp_mb1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap_time 10>, <&mkp MB1>;
 
             label = "MCR_MKP_MB1";
-        };
-
-        mcr_scroll_on: mcr_tog_scroll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&to 11>,
-                <&macro_press>,
-                <&mkp MB5>,
-                <&macro_tap>,
-                <&kp LC(LA(Q))>;
-
-            label = "MCR_TOG_SCROLL";
-        };
-
-        mcr_scroll_off: mcr_scroll_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_release>, <&mkp MB5>, <&macro_tap>, <&to 0>;
-
-            label = "MCR_SCROLL_OFF";
         };
 
         mcr_test2: mcr_test2 {
@@ -379,17 +344,10 @@
             label = "MCR_TEST2";
         };
 
-        mcr_format_code: mcr_format_code {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER &kp LG(Z) &kp SPACE &kp F &kp LG(S)>;
-            label = "MCR_FORMAT_CODE";
-        };
-
         mcr_esc_shift: mcr_esc_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(ESC) &to 0 &mcr_scroll_off>;
+            bindings = <&kp LS(ESC) &to 0>;
             label = "MCR_ESC_SHIFT";
         };
 
@@ -456,7 +414,7 @@
         combo_df_esc {
             bindings = <&mcr_esc>;
             key-positions = <15 16>;
-            layers = <0 8 5 11>;
+            layers = <0 6 3>;
             timeout-ms = <35>;
         };
 
@@ -470,28 +428,28 @@
         combo_fg_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
-            layers = <0 5 8 1>;
+            layers = <0 3 6 1>;
             timeout-ms = <35>;
         };
 
         combo_vb_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 29>;
-            layers = <0 1 8 5>;
+            layers = <0 1 6 3>;
             timeout-ms = <35>;
         };
 
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
-            layers = <0 1 8 5>;
+            layers = <0 1 6 3>;
             timeout-ms = <35>;
         };
 
         combo_jk_esc {
             bindings = <&mcr_esc>;
             key-positions = <19 20>;
-            layers = <0 1 5 8>;
+            layers = <0 1 3 6>;
             timeout-ms = <35>;
         };
 
@@ -566,19 +524,19 @@
         combo_ed_double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <3 15>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_yh_grave {
             bindings = <&kp GRAVE>;
             key-positions = <18 6>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_rf_quotes {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <16 4>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_t1_t1_caps_lock {
@@ -592,7 +550,7 @@
         };
 
         combo_toggle_game_layer {
-            bindings = <&tog 7>;
+            bindings = <&tog 5>;
             key-positions = <25 1>;
             timeout-ms = <100>;
         };
@@ -600,58 +558,58 @@
         combo_gb_paste {
             bindings = <&kp LG(V)>;
             key-positions = <17 29>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_fv_copy {
             bindings = <&kp LG(C)>;
             key-positions = <16 28>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_dc_cut {
             bindings = <&kp LG(X)>;
             key-positions = <15 27>;
-            layers = <0 1 5 8>;
+            layers = <0 1 3 6>;
         };
 
         combo_sx_copy_line {
             bindings = <&mcr_vim_yy>;
             key-positions = <14 26>;
-            layers = <0 1 5 8>;
+            layers = <0 1 3 6>;
         };
 
         combo_qa_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <13 1>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_az_cmd_ctrl_a {
             bindings = <&kp LG(LC(A))>;
             key-positions = <13 25>;
-            layers = <0 1 5 8>;
+            layers = <0 1 3 6>;
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 6 UNDER>;
+            bindings = <&lt 4 UNDER>;
             key-positions = <25 36>;
             timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 6 EXCL>;
+            bindings = <&lt 4 EXCL>;
             key-positions = <34 41>;
             timeout-ms = <75>;
         };
 
         combo_t1_a_media_func_layer {
-            bindings = <&lt 9 LC(LG(N))>;
+            bindings = <&lt 7 LC(LG(N))>;
             key-positions = <13 38>;
         };
 
         combo_t1_semi_media_func_layer {
-            bindings = <&lt 9 COLON>;
+            bindings = <&lt 7 COLON>;
             key-positions = <22 39>;
             timeout-ms = <75>;
         };
@@ -660,14 +618,14 @@
             bindings = <&kp LC(LA(LS(LGUI)))>;
             key-positions = <22 40>;
             timeout-ms = <75>;
-            layers = <0 5>;
+            layers = <0 3>;
         };
 
         combo_meh {
             bindings = <&kp LA(LS(LCTRL))>;
             key-positions = <13 37>;
             timeout-ms = <75>;
-            layers = <0 5>;
+            layers = <0 3>;
         };
 
         combo_q_t1_toggle_console {
@@ -685,7 +643,7 @@
         combo_g_t2_paste_app {
             bindings = <&mcr_paste_app>;
             key-positions = <17 37>;
-            layers = <0 8>;
+            layers = <0 6>;
         };
 
         combo_df_esc_shift {
@@ -714,19 +672,19 @@
         combo_ws_pipe {
             bindings = <&kp PIPE>;
             key-positions = <2 14>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_psemicolon {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <10 22>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_semiquestion {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 34>;
-            layers = <0 5 1 8>;
+            layers = <0 3 1 6>;
         };
 
         combo_hyper_w {
@@ -879,10 +837,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &lt_like_hmr 10 E  &lt_like_hmr 4 R   &lt_like_hmr 2 T      &lt_like_hmr 2 Y  &kp U              &kp I            &kp O            &kp P                 &none
-&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D    &hrm LEFT_SHIFT F  &lt_like_hmr 3 G      &kp H             &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &kp Z         &kp X            &kp C              &kp V              &kp B                 &kp N             &kp M              &kp COMMA        &kp DOT          &kp QUESTION          &none
-                                      &sk LEFT_GUI       &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 5 BACKSPACE   &lt 1 ENTER        &mt LGUI DELETE
+&none  &kp Q         &kp W            &lt_like_hmr 8 E  &kp R              &kp T                 &kp Y            &kp U              &kp I            &kp O            &kp P                 &none
+&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D   &hrm LEFT_SHIFT F  &lt_like_hmr 2 G      &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
+&none  &kp Z         &kp X            &kp C             &kp V              &kp B                 &kp N            &kp M              &kp COMMA        &kp DOT          &kp QUESTION          &none
+                                      &sk LEFT_GUI      &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 3 BACKSPACE  &lt 1 ENTER        &mt LGUI DELETE
             >;
         };
 
@@ -895,30 +853,12 @@
             >;
         };
 
-        hotkeys_layer_1 {
-            bindings = <
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)           &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-&trans  &trans      &trans      &trans         &kp LG(LS(K))  &kp LG(K)            &trans      &trans      &trans      &trans      &trans      &trans
-&trans  &trans      &trans      &trans         &trans         &trans               &trans      &trans      &trans      &trans      &trans      &trans
-                                &kp LC(EQUAL)  &kp LG(LC(A))  &kp LC(BACKSLASH)    &trans      &trans      &trans
-            >;
-        };
-
-        hotkeys_layer_2 {
+        hotkeys_layer {
             bindings = <
 &trans  &trans     &trans          &trans          &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(A)  &kp LG(LS(N1))  &kp LG(LS(N4))  &kp LG(LS(N2))  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans          &kp LG(LA(D))   &kp LG(LS(N5))  &mcr_paste_app    &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans          &mcr_paste_app  &trans            &trans  &trans  &trans
-            >;
-        };
-
-        ide_layer {
-            bindings = <
-&trans  &kp LS(LA(LG(E)))  &kp LS(LG(O))  &kp LS(LG(F))      &trans     &trans              &trans  &kp LG(N7)  &trans  &trans  &trans  &trans
-&trans  &trans             &trans         &kp LG(LS(LA(O)))  &kp LG(E)  &trans              &trans  &trans      &trans  &none   &trans  &trans
-&trans  &trans             &trans         &trans             &trans     &trans              &trans  &trans      &trans  &trans  &trans  &trans
-                                          &kp LG(N9)         &kp LG(P)  &mcr_format_code    &trans  &trans      &trans
             >;
         };
 
@@ -969,19 +909,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(J))  &none           &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
-&trans  &trans  &kp LG(LEFT)   &mcr_scroll_on  &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
-&trans  &trans  &trans         &trans          &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
-                               &mcr_f4_ctrl    &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
-            >;
-        };
-
-        nav_scroll_layer {
-            bindings = <
-&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT     &kp LGUI         &kp LEFT_SHIFT   &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
-&trans  &mcr_scroll_off   &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off  &trans
-                                           &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off    &mcr_scroll_off  &mcr_scroll_off  &mcr_scroll_off
+&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
+&trans  &trans  &kp LG(LEFT)   &trans        &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
+&trans  &trans  &trans         &trans        &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
+                               &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
             >;
         };
     };
