@@ -865,7 +865,7 @@
             bindings = <
 &trans  &trans     &trans          &trans          &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(A)  &kp LG(LS(N1))  &kp LG(LS(N4))  &kp LG(LS(N2))  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans          &kp LG(LA(D))   &kp LG(LS(N5))  &mcr_paste_app    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans          &trans          &kp LG(LS(N5))  &mcr_paste_app    &trans  &trans  &trans  &trans  &trans  &trans
                                    &trans          &mcr_paste_app  &trans            &trans  &trans  &trans
             >;
         };
