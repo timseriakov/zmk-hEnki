@@ -406,13 +406,6 @@
             bindings = <&none &kp T &kp I &kp M &kp O &kp F &kp E &kp Y &kp DOT &kp S &kp E &kp R &kp Y &kp A &kp K &kp O &kp V &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp TAB>;
             label = "MCR_TIMOFEYSERYAKOVGMAILCOM";
         };
-
-        mcr_hyper: mcr_hyper {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LC>, <&kp LA>, <&kp LS>, <&kp LG>;
-            label = "MCR_HYPER";
-        };
     };
 
     combos {
@@ -855,7 +848,7 @@
 &none  &kp Q         &kp W            &lt_like_hmr 8 E           &kp R              &kp T                 &kp Y            &kp U              &kp I            &kp O            &kp P                 &none
 &none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D            &hrm LEFT_SHIFT F  &lt_like_hmr 2 G      &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K  &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
 &none  &kp Z         &kp X            &kp C                      &kp V              &kp B                 &kp N            &kp M              &kp COMMA        &kp DOT          &kp QUESTION          &none
-                                      &mcr_hyper   &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 3 BACKSPACE  &lt 1 ENTER        &mt LGUI DELETE
+                                      &sk LGUI  &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 3 BACKSPACE  &lt 1 ENTER        &mt LGUI DELETE
             >;
         };
 
