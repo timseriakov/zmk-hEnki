@@ -408,9 +408,9 @@
         };
 
         mcr_hyper: mcr_hyper {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC>, <&kp LA>, <&kp LS>, <&kp LG>;
             label = "MCR_HYPER";
         };
     };
