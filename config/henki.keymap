@@ -652,12 +652,6 @@
             layers = <1>;
         };
 
-        combo_wer_scroll_on {
-            bindings = <&mcr_scroll_on>;
-            key-positions = <3 2 4>;
-            timeout-ms = <40>;
-        };
-
         combo_t2_t2_lang_switch {
             bindings = <&kp F24>;
             key-positions = <37 40>;
