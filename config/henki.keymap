@@ -8,7 +8,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -835,10 +834,10 @@
 
         nav_layer {
             bindings = <
-&none  &none             &mcr_next_word            &kp LA(RIGHT_ARROW)  &td_vim_d_dd_D          &gr_vim_ggG                  &td_vim_y_yy_Y             &kp LG(Z)               &to 0               &mcr_new_line_down        &kp LG(V)  &none
-&none  &kp LEFT_CONTROL  &gr_vim_arwright_lineend  &gr_vim_arwup_pgup   &gr_vim_arwdown_pgdown  &gr_vim_arwleft_linestart    &gr_vim_arwleft_linestart  &gr_vim_arwdown_pgdown  &gr_vim_arwup_pgup  &gr_vim_arwright_lineend  &kp LCTRL  &none
-&none  &kp LEFT_SHIFT    &kp BACKSPACE             &kp LG(X)            &kt LEFT_SHIFT          &kp LA(LEFT)                 &none                      &kp LG(X)               &none               &none                     &kp LG(F)  &none
-                                                   &trans               &trans                  &trans                       &trans                     &trans                  &trans
+&none  &none   &mcr_next_word            &kp LA(RIGHT_ARROW)  &td_vim_d_dd_D          &gr_vim_ggG                  &td_vim_y_yy_Y             &kp LG(Z)               &to 0               &mcr_new_line_down        &kp LG(V)  &none
+&none  &trans  &gr_vim_arwright_lineend  &gr_vim_arwup_pgup   &gr_vim_arwdown_pgdown  &gr_vim_arwleft_linestart    &gr_vim_arwleft_linestart  &gr_vim_arwdown_pgdown  &gr_vim_arwup_pgup  &gr_vim_arwright_lineend  &trans     &none
+&none  &trans  &kp BACKSPACE             &kp LG(X)            &trans                  &kp LA(LEFT)                 &none                      &kp LG(X)               &none               &none                     &kp LG(F)  &none
+                                         &trans               &trans                  &trans                       &trans                     &trans                  &trans
             >;
         };
 
