@@ -817,10 +817,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W            &lt_like_hmr 8 E       &kp R              &kp T                 &kp Y            &kp U              &kp I               &kp O            &kp P                 &none
-&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D        &hrm LEFT_SHIFT F  &lt_like_hmr 2 G      &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K     &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
-&none  &kp Z         &kp X            &kp C                  &kp V              &kp B                 &kp N            &kp M              &kp COMMA           &kp DOT          &kp QUESTION          &none
-                                      &skl LS(LA(LC(LGUI)))  &lt 1 SPACE        &mt LEFT_SHIFT TAB    &lt 3 BACKSPACE  &lt 1 ENTER        &skl LS(LA(LCTRL))
+&none  &kp Q         &kp W            &lt_like_hmr 8 E       &kp R              &kp T               &kp Y            &kp U              &kp I               &kp O            &kp P                 &none
+&none  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_GUI D        &hrm LEFT_SHIFT F  &lt_like_hmr 2 G    &kp H            &hrm LEFT_SHIFT J  &hrm LEFT_GUI K     &hrm LEFT_ALT L  &hrm LCTRL SEMICOLON  &none
+&none  &kp Z         &kp X            &kp C                  &kp V              &kp B               &kp N            &kp M              &kp COMMA           &kp DOT          &kp QUESTION          &none
+                                      &skl LS(LA(LC(LGUI)))  &lt 1 SPACE        &lt 3 TAB           &lt 3 BACKSPACE  &lt 1 ENTER        &skl LS(LA(LCTRL))
             >;
         };
 
@@ -842,12 +842,12 @@
             >;
         };
 
-        vim_layer {
+        nav_layer {
             bindings = <
-&none  &none             &mcr_next_word  &kp LA(RIGHT_ARROW)  &none           &none           &td_vim_y_yy_Y             &kp LG(Z)               &to 0               &mcr_new_line_down        &kp LG(V)  &none
-&none  &kp LEFT_CONTROL  &kp LG(F)       &td_vim_d_dd_D       &none           &gr_vim_ggG     &gr_vim_arwleft_linestart  &gr_vim_arwdown_pgdown  &gr_vim_arwup_pgup  &gr_vim_arwright_lineend  &kp LCTRL  &none
-&none  &kp LEFT_SHIFT    &kp BACKSPACE   &kp LG(X)            &kt LEFT_SHIFT  &kp LA(LEFT)    &none                      &kp LG(X)               &none               &none                     &kp LG(F)  &none
-                                         &trans               &trans          &trans          &trans                     &trans                  &trans
+&none  &none             &mcr_next_word            &kp LA(RIGHT_ARROW)  &td_vim_d_dd_D          &gr_vim_ggG                  &td_vim_y_yy_Y             &kp LG(Z)               &to 0               &mcr_new_line_down        &kp LG(V)  &none
+&none  &kp LEFT_CONTROL  &gr_vim_arwright_lineend  &gr_vim_arwup_pgup   &gr_vim_arwdown_pgdown  &gr_vim_arwleft_linestart    &gr_vim_arwleft_linestart  &gr_vim_arwdown_pgdown  &gr_vim_arwup_pgup  &gr_vim_arwright_lineend  &kp LCTRL  &none
+&none  &kp LEFT_SHIFT    &kp BACKSPACE             &kp LG(X)            &kt LEFT_SHIFT          &kp LA(LEFT)                 &none                      &kp LG(X)               &none               &none                     &kp LG(F)  &none
+                                                   &trans               &trans                  &trans                       &trans                     &trans                  &trans
             >;
         };
 
@@ -887,7 +887,7 @@
             >;
         };
 
-        nav_layer {
+        os_nav_layer {
             bindings = <
 &trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &kp LG(P)     &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
