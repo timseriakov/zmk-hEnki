@@ -438,15 +438,15 @@
             timeout-ms = <35>;
         };
 
-        combo_vb_ctrl_a {
-            bindings = <&kp LC(ENTER)>;
+        combo_vb_enter {
+            bindings = <&kp ENTER>;
             key-positions = <28 29>;
             layers = <0 1 5 4>;
             timeout-ms = <35>;
         };
 
-        combo_cv_enter {
-            bindings = <&kp ENTER>;
+        combo_cv_ctrl_a {
+            bindings = <&kp LC(A)>;
             key-positions = <28 27>;
             layers = <0>;
             timeout-ms = <35>;
