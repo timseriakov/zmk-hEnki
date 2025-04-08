@@ -405,6 +405,13 @@
             bindings = <&none &kp T &kp I &kp M &kp O &kp F &kp E &kp Y &kp DOT &kp S &kp E &kp R &kp Y &kp A &kp K &kp O &kp V &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M &kp TAB>;
             label = "MCR_TIMOFEYSERYAKOVGMAILCOM";
         };
+
+        mcr_vim_select_all: mcr_vim_select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp G &kp G &kp LS(V) &kp LS(G)>;
+            label = "MCR_VIM_SELECT_ALL";
+        };
     };
 
     combos {
@@ -418,7 +425,7 @@
         };
 
         combo_sd_ctrl_a {
-            bindings = <&kp LC(A)>;
+            bindings = <&mcr_vim_select_all>;
             key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <40>;
@@ -431,8 +438,8 @@
             timeout-ms = <35>;
         };
 
-        combo_vb_enter {
-            bindings = <&kp ENTER>;
+        combo_vb_ctrl_a {
+            bindings = <&kp LC(ENTER)>;
             key-positions = <28 29>;
             layers = <0 1 5 4>;
             timeout-ms = <35>;
@@ -441,7 +448,7 @@
         combo_cv_enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
-            layers = <0 1 5 4>;
+            layers = <0>;
             timeout-ms = <35>;
         };
 
@@ -664,13 +671,6 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <22 34>;
             layers = <0 4 1 5>;
-        };
-
-        combo_hyper_w {
-            bindings = <&kp LC(LA(LS(LG(W))))>;
-            key-positions = <2 38>;
-            timeout-ms = <75>;
-            layers = <0>;
         };
     };
 
