@@ -548,6 +548,7 @@
         combo_t2_t2_caps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <37 40>;
+            layers = <0>;
         };
 
         combo_v_t3_raycast_apps {
@@ -676,6 +677,7 @@
         combo_t1_t1_vim_layer {
             bindings = <&tog 2>;
             key-positions = <38 39>;
+            layers = <0 2>;
         };
     };
 
