@@ -549,7 +549,6 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <37 40>;
             layers = <0>;
-            timeout-ms = <100>;
         };
 
         combo_v_t3_raycast_apps {
@@ -679,7 +678,6 @@
             bindings = <&tog 2>;
             key-positions = <38 39>;
             layers = <0 2>;
-            timeout-ms = <100>;
         };
     };
 
