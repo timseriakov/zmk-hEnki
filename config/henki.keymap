@@ -409,7 +409,18 @@
         mcr_vim_select_all: mcr_vim_select_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESC &kp G &kp G &kp LS(V) &kp LS(G)>;
+            bindings =
+                <&macro_tap>,
+                <&kp ESC>,
+                <&macro_wait_time 50>,
+                <&kp G>,
+                <&macro_wait_time 30>,
+                <&kp G>,
+                <&macro_wait_time 50>,
+                <&kp LS(V)>,
+                <&macro_wait_time 50>,
+                <&kp LS(G)>;
+
             label = "MCR_VIM_SELECT_ALL";
         };
     };
