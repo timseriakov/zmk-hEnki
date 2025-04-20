@@ -416,7 +416,7 @@
                 <&kp G>,
                 <&macro_wait_time 30>,
                 <&kp G>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 1000>,
                 <&kp LS(V)>,
                 <&macro_wait_time 50>,
                 <&kp LS(G)>;
