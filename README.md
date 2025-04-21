@@ -10,9 +10,7 @@
 
 This is a ZMK configuration for the hEnki keyboard.
 
-This is a fork of [zmk-config-hEnki](https://github.com/brandonhutchison/zmk-config-hEnki)
-
-Link to project: [https://github.com/brandonhutchison/zmk-config-hEnki](https://github.com/brandonhutchison/zmk-config-hEnki)
+Link to project: [zmk-config-hEnki](https://github.com/brandonhutchison/zmk-config-hEnki)
 
 ## Photo
 
