@@ -841,6 +841,15 @@
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
+
+        td_space_z: td_space_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SPACE_Z";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp Z>;
+
+            tapping-term-ms = <260>;
+        };
     };
 
     keymap {
@@ -929,19 +938,19 @@
 
         OpenRA_base {
             bindings = <
-&trans  &kp Q   &kp W   &kp E      &kp R       &kp P              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3     &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp S   &kp G   &kp SPACE  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &trans
-                        &sl 10     &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
+&trans  &kp Q   &kp W   &kp E        &kp R       &kp T              &trans  &trans  &trans  &trans  &trans  &kp ESC
+&trans  &kp N1  &kp N2  &kp N3       &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp S   &kp G   &td_space_z  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &trans
+                        &sl 10       &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
             >;
         };
 
         OpenRA_ext {
             bindings = <
-&trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp T      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z         &mcr_f6       &mcr_f7       &mcr_f8       &kp B      &trans  &trans  &trans  &trans  &trans  &trans
-                                    &to 9         &kp SPACE     &kp ESC    &to 0   &trans  &trans
+&trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp TAB     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f6       &mcr_f7       &mcr_f8       &mcr_f9       &mcr_f10    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &to 9         &kp P         &kp ESC     &to 0   &trans  &trans
             >;
         };
     };
