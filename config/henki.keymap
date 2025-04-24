@@ -903,17 +903,17 @@
             bindings = <
 &trans  &kp Q   &kp W   &kp E      &kp R       &kp P              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N1  &kp N2  &kp N3     &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A   &kp X   &kp SPACE  &kp S       &kp G              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp S   &kp G   &kp SPACE  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &trans
                         &sl 10     &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
             >;
         };
 
         OpenRA_ext {
             bindings = <
-&trans  &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1      &kp F2      &kp F3      &kp F4      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans      &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &to 9       &trans      &trans    &to 0   &trans  &trans
+&trans  &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  &kp T      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1      &kp F2      &kp F3      &kp F4      &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z       &trans      &trans      &trans      &kp B      &trans  &trans  &trans  &trans  &trans  &trans
+                                &to 9       &kp SPACE   &kp ESC    &to 0   &trans  &trans
             >;
         };
     };
