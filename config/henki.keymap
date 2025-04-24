@@ -895,7 +895,7 @@
 &trans  &kp Q  &kp W  &kp E    &kp R      &kp T        &kp TILDE       &trans          &trans        &trans           &trans   &trans
 &trans  &kp A  &kp S  &kp D    &kp F      &kp G        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
 &trans  &kp Z  &kp X  &kp C    &kp V      &kp B        &trans          &trans          &trans        &trans           &kp ESC  &trans
-                      &kp TAB  &kp LSHFT  &kp SPACE    &trans          &trans          &trans
+                      &kp TAB  &kp LSHFT  &kp SPACE    &to 0           &trans          &trans
             >;
         };
     };
