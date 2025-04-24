@@ -559,12 +559,6 @@
             key-positions = <29 38>;
         };
 
-        combo_toggle_game_layer {
-            bindings = <&tog 8>;
-            key-positions = <25 1>;
-            timeout-ms = <100>;
-        };
-
         combo_gb_paste {
             bindings = <&kp LG(V)>;
             key-positions = <17 29>;
@@ -856,7 +850,7 @@
 &trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &trans       &trans  &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &kp LG(P)     &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans  &trans         &trans        &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
-                               &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
+                               &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &tog 8  &trans   &trans
             >;
         };
 
