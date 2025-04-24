@@ -940,7 +940,7 @@
             bindings = <
 &trans  &kp Q   &kp W   &kp E        &kp R       &kp T              &trans  &trans  &trans  &trans  &trans  &kp ESC
 &trans  &kp N1  &kp N2  &kp N3       &kp N4      &kp H              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp S   &kp G   &td_space_z  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp S   &kp G   &td_space_z  &kp X       &kp A              &trans  &trans  &trans  &trans  &trans  &kp ESC
                         &sl 10       &skl LCTRL  &skl LEFT_SHIFT    &to 0   &trans  &trans
             >;
         };
