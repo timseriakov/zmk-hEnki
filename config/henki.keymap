@@ -415,6 +415,34 @@
 
             label = "MCR_VIM_SELECT_ALL";
         };
+
+        mcr_f1_ctrl: mcr_f1_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24 &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F1>,
+                <&macro_release>,
+                <&kp F24 &kp LEFT_CONTROL>;
+
+            label = "MCR_F1_CTRL";
+        };
+
+        mcr_f2_ctrl: mcr_f2_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F24 &kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp F2>,
+                <&macro_release>,
+                <&kp F24 &kp LEFT_CONTROL>;
+
+            label = "MCR_F2_CTRL";
+        };
     };
 
     combos {
@@ -910,10 +938,10 @@
 
         OpenRA_ext {
             bindings = <
-&trans  &kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  &kp T      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1      &kp F2      &kp F3      &kp F4      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z       &trans      &trans      &trans      &kp B      &trans  &trans  &trans  &trans  &trans  &trans
-                                &to 9       &kp SPACE   &kp ESC    &to 0   &trans  &trans
+&trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp T      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z         &trans        &trans        &trans        &kp B      &trans  &trans  &trans  &trans  &trans  &trans
+                                    &to 9         &kp SPACE     &kp ESC    &to 0   &trans  &trans
             >;
         };
     };
