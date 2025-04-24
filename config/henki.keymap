@@ -939,8 +939,8 @@
         OpenRA_ext {
             bindings = <
 &trans  &mcr_f1_ctrl  &mcr_f2_ctrl  &mcr_f3_ctrl  &mcr_f4_ctrl  &kp T      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z         &trans        &trans        &trans        &kp B      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z         &mcr_f6       &mcr_f7       &mcr_f8       &kp B      &trans  &trans  &trans  &trans  &trans  &trans
                                     &to 9         &kp SPACE     &kp ESC    &to 0   &trans  &trans
             >;
         };
