@@ -687,6 +687,13 @@
             key-positions = <38 39>;
             layers = <0 2>;
         };
+
+        combo_xc_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <26 27>;
+            timeout-ms = <35>;
+            layers = <0>;
+        };
     };
 
     behaviors {
