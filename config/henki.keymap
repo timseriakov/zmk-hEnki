@@ -652,13 +652,13 @@
             timeout-ms = <30>;
         };
 
-        combo_ol_backslash {
-            bindings = <&kp BACKSLASH>;
+        combo_ol_pipe {
+            bindings = <&kp PIPE>;
             key-positions = <9 21>;
         };
 
-        combo_ws_pipe {
-            bindings = <&kp PIPE>;
+        combo_ws_backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <2 14>;
             layers = <0 4 1 5>;
         };
@@ -686,6 +686,12 @@
             key-positions = <26 27>;
             timeout-ms = <35>;
             layers = <0>;
+        };
+
+        combo_we_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <2 3>;
+            timeout-ms = <40>;
         };
     };
 
