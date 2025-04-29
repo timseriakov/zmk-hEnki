@@ -873,7 +873,7 @@
 
         os_nav_layer {
             bindings = <
-&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &trans   &to 8        &tog 9  &trans  &trans
+&trans  &trans  &kp LG(LC(J))  &none         &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 11   &to 8        &to 9   &trans  &trans
 &trans  &trans  &kp LG(LEFT)   &kp LG(P)     &kp LG(RIGHT)  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans  &trans         &trans        &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
                                &mcr_f4_ctrl  &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
@@ -940,6 +940,15 @@
 &trans  &mcr_f1       &mcr_f2       &mcr_f3       &mcr_f4       &mcr_f5     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mcr_f6       &mcr_f7       &mcr_f8       &mcr_f9       &mcr_f10    &trans  &trans  &trans  &trans  &trans  &trans
                                     &to 9         &kp P         &kp ESC     &to 0   &trans  &trans
+            >;
+        };
+
+        hldm {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &kp ESC  &trans
+&trans  &trans  &kp A   &kp W      &kp D      &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &kp S      &trans     &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                        &kp LSHFT  &kp SPACE  &trans    &to 0   &trans  &trans
             >;
         };
     };
