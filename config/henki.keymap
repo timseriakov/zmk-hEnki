@@ -529,6 +529,7 @@
         combo_tg_tilde {
             bindings = <&kp TILDE>;
             key-positions = <5 17>;
+            layers = <0>;
         };
 
         combo_uj_plus {
@@ -945,9 +946,9 @@
 
         hldm {
             bindings = <
-&trans  &kp N2   &kp N3  &kp W  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &kp ESC  &trans
-&trans  &kp N1   &kp A   &kp S  &kp D      &kp R        &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &kp TAB  &trans  &kp E  &kp E      &kp F        &trans  &trans  &trans  &trans  &kp ESC  &trans
+&trans  &kp N2   &kp N3  &kp W  &kp N4     &kp N5       &trans  &trans  &trans  &trans  &kp ESC    &trans
+&trans  &kp N1   &kp A   &kp S  &kp D      &kp R        &trans  &trans  &trans  &trans  &kp TILDE  &trans
+&trans  &kp TAB  &trans  &kp E  &kp E      &kp F        &trans  &trans  &trans  &trans  &kp ESC    &trans
                          &kp C  &kp SPACE  &kp SPACE    &to 0   &trans  &trans
             >;
         };
