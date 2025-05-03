@@ -6,7 +6,7 @@
 
 ```
 
-# ZMK hEnki Keyboard
+# ZMK firmware for hEnki Keyboard
 
 This is a ZMK configuration for the hEnki keyboard.
 
