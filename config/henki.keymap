@@ -702,7 +702,7 @@
         };
 
         combo_t1_q {
-            bindings = <&kp LG(GRAVE)>;
+            bindings = <&kp LG(TILDE)>;
             key-positions = <1 38>;
             layers = <0>;
         };
