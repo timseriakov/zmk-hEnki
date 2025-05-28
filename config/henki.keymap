@@ -700,6 +700,12 @@
             key-positions = <1 37>;
             layers = <0>;
         };
+
+        combo_t1_q {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <1 38>;
+            layers = <0>;
+        };
     };
 
     behaviors {
