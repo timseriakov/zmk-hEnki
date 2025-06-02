@@ -709,7 +709,7 @@
         };
 
         combo_cv_hyper {
-            bindings = <&kp LA(LS(LC(LGUI)))>;
+            bindings = <&skl LA(LS(LC(LGUI)))>;
             key-positions = <28 27>;
             layers = <0>;
         };
