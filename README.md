@@ -8,7 +8,7 @@
 
 # ZMK firmware for hEnki Keyboard
 
-This is a ZMK configuration for the hEnki keyboard.
+ZMK configuration files for my custom build of the hEnki keyboard.
 
 Link to project: [https://github.com/vrifmus/hEnki](https://github.com/vrifmus/hEnki)
 
