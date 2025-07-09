@@ -724,6 +724,7 @@
             bindings = <&skl LS(LA(LCTRL))>;
             key-positions = <19 40>;
             layers = <0>;
+            timeout-ms = <10>;
         };
     };
 
@@ -969,4 +970,3 @@
         };
     };
 };
-
