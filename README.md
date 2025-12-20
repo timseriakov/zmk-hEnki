@@ -31,3 +31,7 @@ Link to project: [https://github.com/vrifmus/hEnki](https://github.com/vrifmus/h
 ---
 
 ![hEnki Keyboard](./henki-5.jpg)
+
+---
+
+![hEnki Keyboard](./henki-6.jpg)
