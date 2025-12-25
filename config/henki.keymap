@@ -930,8 +930,8 @@
 
         os_nav_layer {
             bindings = <
-&trans  &kp LC(P)  &kp LG(LC(J))  &none      &kp LG(LC(K))  &mcr_f3_ctrl    &trans  &to 8    &to 10       &to 9   &trans  &trans
-&trans  &trans     &kp LG(J)      &kp LG(P)  &kp LG(K)      &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
+&trans  &kp LC(P)  &kp LG(J)      &none      &kp LG(K)      &mcr_f3_ctrl    &trans  &to 8    &to 10       &to 9   &trans  &trans
+&trans  &trans     &kp LG(LC(J))  &kp LG(P)  &kp LG(LC(K))  &trans          &trans  &kp TAB  &kp LS(TAB)  &trans  &trans  &trans
 &trans  &trans     &trans         &trans     &trans         &trans          &trans  &trans   &trans       &trans  &trans  &trans
                                   &mkp MB5   &mcr_f5_ctrl   &kp LC(F3)      &trans  &trans   &trans
             >;
