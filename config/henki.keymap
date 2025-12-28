@@ -750,8 +750,8 @@
             layers = <0 1 5>;
         };
 
-        combo_wr_mbtg {
-            bindings = <&kp SPACE>;
+        combo_wr_mktg {
+            bindings = <&mktg MB5>;
             key-positions = <4 2>;
             layers = <0>;
         };
