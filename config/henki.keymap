@@ -5,11 +5,11 @@
  */
 
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_key_toggle.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <behaviors/mouse_key_toggle.dtsi>
 
 &mt {
     flavor = "balanced";
@@ -748,6 +748,12 @@
             key-positions = <28 27>;
             timeout-ms = <35>;
             layers = <0 1 5>;
+        };
+
+        combo_wr_mbtg {
+            bindings = <&kp SPACE>;
+            key-positions = <4 2>;
+            layers = <0>;
         };
     };
 
