@@ -748,6 +748,13 @@
             key-positions = <4 2>;
             layers = <0>;
         };
+
+        combo_f_t3_homerow_app {
+            bindings = <&kp LG(LS(LA(LC(LEFT_BRACE))))>;
+            key-positions = <36 16>;
+            timeout-ms = <35>;
+            layers = <0 5>;
+        };
     };
 
     behaviors {
