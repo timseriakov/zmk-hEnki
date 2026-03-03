@@ -720,8 +720,8 @@
         combo_j_t3_vim_layer {
             bindings = <&tog 2>;
             key-positions = <19 40>;
-            layers = <0>;
-            timeout-ms = <40>;
+            layers = <0 2>;
+            timeout-ms = <70>;
         };
 
         combo_h_t2_shift {
