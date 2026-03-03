@@ -692,12 +692,6 @@
             layers = <0 4 1 5>;
         };
 
-        combo_t1_t1_vim_layer {
-            bindings = <&tog 2>;
-            key-positions = <38 39>;
-            layers = <0 2>;
-        };
-
         combo_xc_ctrl_s_opencode {
             bindings = <&kp LC(S)>;
             key-positions = <26 27>;
@@ -723,8 +717,8 @@
             layers = <0>;
         };
 
-        combo_j_t3 {
-            bindings = <&skl LS(LA(LCTRL))>;
+        combo_j_t3_vim_layer {
+            bindings = <&tog 2>;
             key-positions = <19 40>;
             layers = <0>;
             timeout-ms = <40>;
@@ -747,13 +741,6 @@
             bindings = <&mktg MB5>;
             key-positions = <4 2>;
             layers = <0>;
-        };
-
-        combo_f_t3_homerow_app {
-            bindings = <&kp LG(LS(LA(LC(LEFT_BRACE))))>;
-            key-positions = <36 16>;
-            timeout-ms = <35>;
-            layers = <0 5>;
         };
     };
 
