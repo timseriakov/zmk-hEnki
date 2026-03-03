@@ -623,13 +623,13 @@
         };
 
         combo_t2_z_bt_layer {
-            bindings = <&lt 7 UNDER>;
+            bindings = <&lt 7 LC(A)>;
             key-positions = <25 36>;
             timeout-ms = <75>;
         };
 
         combo_t2_slsh_bt_layer {
-            bindings = <&lt 7 EXCL>;
+            bindings = <&lt 7 LC(A)>;
             key-positions = <34 41>;
             timeout-ms = <75>;
         };
@@ -698,8 +698,8 @@
             layers = <0 2>;
         };
 
-        combo_xc_backslash {
-            bindings = <&kp BACKSLASH>;
+        combo_xc_ctrl_s_opencode {
+            bindings = <&kp LC(S)>;
             key-positions = <26 27>;
             timeout-ms = <35>;
             layers = <0>;
