@@ -516,9 +516,10 @@
             key-positions = <16 37>;
         };
 
-        combo_n_t1_homerow_app {
+        combo_m_t3_alacritty {
             bindings = <&kp LG(LS(J))>;
-            key-positions = <30 39>;
+            key-positions = <31 41>;
+            layers = <0>;
         };
 
         combo_n_t2_lang_switch {
@@ -730,7 +731,7 @@
             layers = <0 5>;
         };
 
-        combo_v_t3_homerow_app {
+        combo_v_t3_alacritty {
             bindings = <&kp LG(LS(J))>;
             key-positions = <28 36>;
             timeout-ms = <35>;
@@ -741,6 +742,12 @@
             bindings = <&mktg MB5>;
             key-positions = <4 2>;
             layers = <0>;
+        };
+
+        combo_f_t1_homerow_app {
+            bindings = <&kp F17>;
+            key-positions = <16 38>;
+            layers = <0 2>;
         };
     };
 
