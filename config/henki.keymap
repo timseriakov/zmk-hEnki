@@ -746,7 +746,7 @@
 
         combo_f_t1_homerow_app {
             bindings = <&kp F17>;
-            key-positions = <16 38>;
+            key-positions = <37 28>;
             layers = <0 2>;
         };
     };
