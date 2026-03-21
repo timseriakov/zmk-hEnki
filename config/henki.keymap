@@ -749,6 +749,13 @@
             key-positions = <37 28>;
             layers = <0 2>;
         };
+
+        combo_cv {
+            bindings = <&mcr_f5_ctrl>;
+            key-positions = <28 27>;
+            timeout-ms = <35>;
+            layers = <0 5>;
+        };
     };
 
     behaviors {
