@@ -448,6 +448,16 @@
             bindings = <&kp DOT &kp SPACE &skl LEFT_SHIFT>;
             label = "MCR_DOT_SPACE_LAT";
         };
+
+        mcp_prompt_input: mcp_prompt_input {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SPACE &kp S &kp D &kp F &kp S &kp D &kp F>,
+                <&macro_press>;
+
+            label = "MCP_PROMPT_INPUT";
+        };
     };
 
     combos {
@@ -514,6 +524,7 @@
         combo_f_t2_homerow_app {
             bindings = <&kp LG(LC(SPACE))>;
             key-positions = <16 37>;
+            layers = <0>;
         };
 
         combo_m_t3_alacritty {
@@ -755,6 +766,12 @@
             key-positions = <28 27>;
             timeout-ms = <35>;
             layers = <0 5>;
+        };
+
+        combo_t_t2_prompt_input {
+            bindings = <&mcp_prompt_input>;
+            key-positions = <5 37>;
+            layers = <0>;
         };
     };
 
