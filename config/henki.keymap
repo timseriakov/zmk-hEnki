@@ -23,13 +23,6 @@
 
 / {
     macros {
-        mcr_arr_fn: macro_arrow_fn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE &kp RET>;
-            label = "MACRO_ARROW_FN";
-        };
-
         mcr_test: mcr_test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
