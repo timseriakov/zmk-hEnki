@@ -762,6 +762,7 @@
             bindings = <&mcp_prompt_input>;
             key-positions = <5 37>;
             layers = <0>;
+            timeout-ms = <25>;
         };
     };
 
