@@ -577,12 +577,6 @@
             layers = <0 4 1 5>;
         };
 
-        combo_t2_t2_caps_lock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <37 40>;
-            layers = <0>;
-        };
-
         combo_v_t3_raycast_apps {
             bindings = <&kp LC(LG(N))>;
             key-positions = <29 38>;
@@ -663,12 +657,6 @@
             bindings = <&mcr_esc_shift>;
             key-positions = <15 16>;
             layers = <1>;
-        };
-
-        combo_t2_t2_lang_switch {
-            bindings = <&kp F24>;
-            key-positions = <37 40>;
-            timeout-ms = <30>;
         };
 
         combo_ol_pipe {
@@ -763,6 +751,13 @@
             key-positions = <5 37>;
             layers = <0>;
             timeout-ms = <25>;
+        };
+
+        combo_t_t2_caps_lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <6 40>;
+            timeout-ms = <25>;
+            layers = <0>;
         };
     };
 
