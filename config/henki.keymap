@@ -491,7 +491,7 @@
         combo_io_backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <8 9>;
-            timeout-ms = <40>;
+            timeout-ms = <20>;
         };
 
         combo_kl_equal {
@@ -692,7 +692,7 @@
         combo_we_slash {
             bindings = <&kp SLASH>;
             key-positions = <2 3>;
-            timeout-ms = <40>;
+            timeout-ms = <20>;
         };
 
         combo_t2_q {
