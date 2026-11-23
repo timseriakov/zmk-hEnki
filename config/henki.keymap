@@ -765,6 +765,12 @@
             key-positions = <40 10>;
             layers = <0>;
         };
+
+        combo_t1_p {
+            bindings = <&kp LG(TILDE)>;
+            key-positions = <39 10>;
+            layers = <0>;
+        };
     };
 
     behaviors {
