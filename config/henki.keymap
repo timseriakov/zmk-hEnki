@@ -759,6 +759,12 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        combo_t2_p {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <40 10>;
+            layers = <0>;
+        };
     };
 
     behaviors {
